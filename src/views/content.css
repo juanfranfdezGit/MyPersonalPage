@@ -1,0 +1,72 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.content-container {
+    height: 97vh;
+    overflow: hidden;
+    flex-direction: column;
+    background: var(--greyDark);
+    margin: 12px;
+    border-radius: 24px;
+    width: 75vw;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.content-container nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    gap: 40px;
+    background: var(--grey);
+    padding: 24px 40px;
+    border-radius: 0 0 0 12px;
+}
+
+.content-container nav button {
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    transition: all .5s;
+}
+
+.content-container nav button:hover {
+    color: var(--gold);
+    cursor: pointer;
+}
+
+.btnActive {
+    color: var(--gold);
+}
+
+
+@media (max-width: 900px) { 
+
+    .content-container {
+        height: 80vh;
+        width: 95vw;
+        padding-top: 100px;
+    }
+    
+    .content-container nav {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) { 
+
+    .content-container nav button {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 320px) { 
+
+    .content-container nav button {
+        font-size: 18px;
+    }
+
+}

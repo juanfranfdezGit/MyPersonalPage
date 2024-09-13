@@ -1,0 +1,58 @@
+:root {
+  --gold: #d9ad26;
+  --white: #fcfcfc;
+  --black: #222;
+  --grey: #444;
+  --greyDark: #333;
+  --greyLight: #aaa;
+  --shadow: #888;
+  --border: #777;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
+body {
+  background: var(--black);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+h2 { 
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 { 
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.aboutDivider {
+  width: 300px;
+  height: 3px;
+  border-radius: 32px;
+  background: var(--gold);
+  margin: 18px 0 40px 0;
+}

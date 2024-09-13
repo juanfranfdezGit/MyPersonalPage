@@ -1,0 +1,38 @@
+.resume {
+    margin: 32px 20vw 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume ul li {
+    list-style: none;
+    margin: 20px 0 8px 12px;
+    font-size: 20px;
+}
+
+.resume p {
+    margin: 20px 0 8px 12px;
+    font-size: 20px;
+}
+
+.resume ul span {
+    margin: 12px;
+    color: var(--greyLight);
+}
+
+.resume .resumeTitles {
+    margin-top: 32px;
+}
+
+.resume ul .descriptions {
+    margin: 0 0 8px 12px;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) { 
+
+    .resume {
+        margin: 32px 3vw 32px 32px;
+    }
+    
+}

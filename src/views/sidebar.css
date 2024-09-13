@@ -1,0 +1,172 @@
+.sidebar {
+    width: 20vw;
+    height: 97vh;
+    overflow: hidden;
+    flex-direction: column;
+    background: var(--greyDark);
+    margin: 12px;
+    border-radius: 24px;
+}
+
+.sidebar .myinfo {
+    width: 100%;
+    flex-direction: column;
+}
+
+.sidebar .myinfo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 12px var(--shadow);
+    margin-bottom: 24px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.sidebar .myinfo .name, .sidebar .myinfo .job {
+    padding: 0 12px;
+    text-align: center;
+}
+
+.sidebar .myinfo .name {
+    margin-bottom: 32px;
+}
+
+.sidebar .myinfo .job {
+    padding: 12px 24px;
+    background: var(--grey);
+    border-radius: 32px;
+    font-size: 24px;
+}
+
+.sidebar .myinfo .divider {
+    width: 80%;
+    height: 3px;
+    background: var(--grey);
+    border-radius: 32px;
+    margin: 32px 0;
+}
+
+.sidebar .contact-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+}
+
+.sidebar .contact-container .contact {
+    gap: 32px;
+}
+
+.sidebar .contact-container .contact img {
+    padding: 14px;
+    border-radius: 12px;
+    background: var(--grey);
+}
+
+.sidebar .contact-container .contact h3 {
+    color: var(--greyLight);
+}
+
+.sidebar .socials {
+    margin: 48px 0 0 0;
+    gap: 21px;
+}
+
+.sidebar .socials img {
+    width: 40px;
+    transition: all .5s;
+}
+
+.sidebar .socials img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media (max-width: 1320px) { 
+    .sidebar {
+        width: 30vw;
+    }
+    
+    .sidebar .myinfo img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .sidebar .myinfo .name {
+        margin-bottom: 32px;
+    }
+    
+    .sidebar .myinfo .job {
+        font-size: 18px;
+    }
+    
+    .sidebar .contact-container {
+        gap: 28px;
+    }
+    
+    .sidebar .contact-container .contact {
+        gap: 28px;
+    }
+    
+    .sidebar .socials {
+        margin: 32px 0 0 0;
+    }
+}
+
+@media (max-width: 900px) { 
+
+    .sidebar {
+        width: 95vw;
+        height: 60vh;
+    }
+
+    .sidebar .myinfo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sidebar .contact-container {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 450px) { 
+
+    .sidebar {
+        height: 120vh;
+    }
+
+    .sidebar .contact-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 360px) { 
+
+    .sidebar .myinfo img {
+        margin-top: 24px;
+    }
+
+}
+
+
+@media (max-width: 320px) { 
+
+    .sidebar {
+        height: 180vh;
+    }
+
+    .sidebar .myinfo img {
+        margin-top: 24px;
+    }
+
+    .sidebar .contact-container {
+        flex-direction: column;
+    }
+
+}
+
+

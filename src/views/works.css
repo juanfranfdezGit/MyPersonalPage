@@ -1,0 +1,113 @@
+.works {
+    margin: 32px 20vw 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.works .works-container {
+    width: 64vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.works .works-container .work {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 0 8px var(--shadow);
+    width: 100%;
+    height: 250px;
+}
+
+.works .works-container .work:hover {
+    cursor: pointer;
+}
+
+.works .works-container .work::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    z-index: 1;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.works .works-container .work:hover::before {
+    opacity: .8;
+    z-index: 3; 
+}
+
+.works .works-container .work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.works .works-container .work:hover img {
+    transform: scale(1.1);
+}
+
+.works .works-container .work .workTech {
+    width: 100%;
+    height: 32px;
+    transition: all 1s;
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    gap: 12px;
+}
+
+.works .works-container .work .workTech img {
+    margin-left: 20px;
+    max-width: 32px;
+    object-fit: contain;
+}
+
+.works .works-container .work a {
+    text-decoration: none;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    font-size: 32px;
+    font-weight: 800;
+    transition: all 2s;
+    text-align: center;
+}
+
+.works .works-container .work:hover a {
+    opacity: 1;
+    z-index: 4;
+}
+
+.fitLeft {
+    object-position: left;
+}
+
+@media (max-width: 900px) { 
+    
+    .works .works-container {
+        width: 86vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 450px) { 
+    
+    .works .works-container {
+        width: 80vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

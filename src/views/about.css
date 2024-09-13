@@ -1,0 +1,65 @@
+.about {
+    margin: 32px 20vw 32px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about h2 {
+    margin: 32px 0 8px 0;
+}
+
+.about .techs {
+    max-width: 100vw;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.about .techs ul {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .techs ul li {
+    flex-direction: column;
+    width: 80px;
+    margin: 30px 20px;
+}
+
+.about .techs ul li .imgContainer {
+    width: 80px;
+    height: 80px;
+}
+
+.about .techs ul li img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    object-fit: contain;
+}
+
+.about .techs ul li p {
+    font-family: SatoshiB;
+    font-size: 1.3em;
+    position: relative;
+    top: -20px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.about .techs ul li:hover p {
+    top: 20px;
+    opacity: 1;
+}
+
+.about .techs ul li:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 2px var(--shadow));
+}
+
+@media (max-width: 900px) { 
+
+    .about {
+        margin: 32px 3vw 32px 32px;
+    }
+    
+}
